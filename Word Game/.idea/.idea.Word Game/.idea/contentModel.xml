@@ -5,13 +5,17 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="__Scripts" t="Include">
+          <e p="Letter.cs" t="Include" />
           <e p="ProtoTools" t="Include">
             <e p="FloatingScore.cs" t="Include" />
             <e p="PT_XMLReader.cs" t="Include" />
             <e p="Scoreboard.cs" t="Include" />
             <e p="Utils.cs" t="Include" />
           </e>
+          <e p="WordGame.cs" t="Include" />
+          <e p="WordLevel.cs" t="Include" />
           <e p="WordList.cs" t="Include" />
+          <e p="Wyrd.cs" t="Include" />
         </e>
         <e p="Materials &amp; Textures" t="Include">
           <e p="UnlitAlpha.shader" t="Include" />

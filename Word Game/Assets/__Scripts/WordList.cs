@@ -5,13 +5,16 @@ using UnityEngine;
 public class WordList : MonoBehaviour
 {
     private static WordList S;
+    
 
-    [Header("Set in Inspector")] public TextAsset wordListText;
+    [Header("Set in Inspector")] 
+    public TextAsset wordListText;
     public int numToParseBeforeYield = 10000;
     public int wordLengthMin = 3;
     public int wordLengthMax = 7;
 
-    [Header("Set Dynamically")] public int currLine = 0;
+    [Header("Set Dynamically")] 
+    public int currLine = 0;
     public int totalLines;
     public int longWordCount;
     public int wordCount;
@@ -26,13 +29,16 @@ public class WordList : MonoBehaviour
         S = this; //Set up the wordlist singleton
     }
 
-// Start is called before the first frame update
-    void Start()
+    public void Init()
     {
         lines = wordListText.text.Split('\n');
         totalLines = lines.Length;
         StartCoroutine(ParseLines());
+    }
 
+    static public void INIT()
+    {
+        S.Init();
     }
 
     public IEnumerator ParseLines()
@@ -63,6 +69,7 @@ public class WordList : MonoBehaviour
 
         longWordCount = longWords.Count;
         wordCount = words.Count;
+        gameObject.SendMessage("WordListParseComplete");
     }
     static public List<string> GET_WORDS() {
         return( S.words );

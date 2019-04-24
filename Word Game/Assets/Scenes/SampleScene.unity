@@ -192,6 +192,8 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669908}
+  - component: {fileID: 534669907}
   - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
@@ -284,3 +286,49 @@ MonoBehaviour:
   totalLines: 0
   longWordCount: 0
   wordCount: 0
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed7d877727a04b7b88428a6cc5a75a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabLetter: {fileID: 9077298879710325108, guid: e955dad8683cf4beca641cd905010398,
+    type: 3}
+  wordArea:
+    serializedVersion: 2
+    x: -24
+    y: 19
+    width: 48
+    height: 28
+  letterSize: 1.5
+  showAllWyrds: 1
+  bigLetterSize: 4
+  bigColorDim: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+  bigColorSelected: {r: 1, g: 0.9, b: 0.7, a: 1}
+  bigLetterCenter: {x: 0, y: -16, z: 0}
+  mode: 0
+  currLevel: {fileID: 0}
+  bigLetters: []
+  bigLettersActive: []
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41c286b3ac224636b8399a60f25a2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNum: 0
+  longWordIndex: 0
+  word: 
+  subWords: []
